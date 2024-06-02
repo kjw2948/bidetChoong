@@ -1,4 +1,4 @@
-package kim.bidetchoong.toilet;
+package kim.bidetchoong.domain.toilet;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

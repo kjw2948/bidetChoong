@@ -1,4 +1,4 @@
-package kim.bidetchoong.member;
+package kim.bidetchoong.domain.member;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

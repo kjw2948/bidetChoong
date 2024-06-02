@@ -1,4 +1,4 @@
-package kim.bidetchoong.toilet;
+package kim.bidetchoong.domain.toilet;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,7 +19,6 @@ public class ToiletEvaluation {
         long total = this.grade * this.evaluatePeople;
         total += star;
         this.evaluatePeople ++;
-
         this.grade = total / this.evaluatePeople;
     }
 }

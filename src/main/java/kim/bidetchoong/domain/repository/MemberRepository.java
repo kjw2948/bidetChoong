@@ -1,6 +1,6 @@
-package kim.bidetchoong.repository;
+package kim.bidetchoong.domain.repository;
 
-import kim.bidetchoong.member.Member;
+import kim.bidetchoong.domain.member.Member;
 import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
