@@ -15,5 +15,4 @@ public class ToiletRepository {
         return toilet.getId();
     }
 
-    //오름차순 , 내림차순 정렬 -->
 }
