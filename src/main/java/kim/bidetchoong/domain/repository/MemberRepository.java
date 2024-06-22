@@ -1,6 +1,7 @@
 package kim.bidetchoong.domain.repository;
 
 import kim.bidetchoong.domain.member.Member;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -12,9 +13,14 @@ import java.util.Map;
 public class MemberRepository {
     private static Map<Long, Member> memberStore = new HashMap<>();
 
+
     public Long save(Member member) {
-        memberStore.put(member.getId(), member);
-        return member.getId();
+        // 로그인 가능 로직
+        if(member.login()) {
+            memberStore.put(member.getId(), member);
+            return member.getId();
+        }
+        throw new RuntimeException();
     }
 
     public Member findById(Long id) {

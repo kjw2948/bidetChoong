@@ -49,5 +49,5 @@ public class ToiletController {
         return "redirect://home";
     }
 
-
+    @GetMapping("")
 }

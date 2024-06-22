@@ -24,6 +24,4 @@ public class ToiletRepository {
     public List<Toilet> findAll() {
         return new ArrayList<>(toiletStore.values());
     }
-
-
 }
