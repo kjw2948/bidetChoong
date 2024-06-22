@@ -24,5 +24,9 @@ public class Toilet {
     }
 
 
-
+    public void editToilet(Toilet toilet) {
+        this.toiletName = toilet.getToiletName();
+        this.location = toilet.getLocation();
+        this.grade = toilet.getGrade();
+    }
 }
