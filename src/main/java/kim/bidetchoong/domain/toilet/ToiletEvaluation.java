@@ -11,8 +11,7 @@ import lombok.Setter;
 @Getter @Setter
 public class ToiletEvaluation {
     @Id @GeneratedValue
-    @OneToOne(mappedBy = "toilet_id")
-    private String toiletName;
+    private Long toiletId;
 
     private long grade = 0;
     private int evaluatePeople = 0;

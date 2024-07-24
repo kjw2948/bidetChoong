@@ -10,10 +10,9 @@ public class Toilet {
     @Id @GeneratedValue
     private Long id;
 
-    @OneToOne
-    @JoinColumn(name = "toiletName")
-    private String toiletName;
 
+    //@JoinColumn(name = "toiletId")
+    private String toiletName;
     private String location;
     private Long grade = 0L; // 화장실 별점
 
